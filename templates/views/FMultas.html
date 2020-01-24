@@ -1,0 +1,42 @@
+<div class="form">
+
+<header class="head">
+  <h1>Expedición de multas</h1>
+</header>
+
+<form id="form1" name="form1" method="post" action="#">
+  
+  <div class="form__group">
+    <input name="vehiculo" type="number" id="vehiculo" class="form__input" placeholder="Vehículo" required/>
+    <label class="form__label" for="vehiculo">Vehículo</label>
+  </div>
+  
+  <div class="form__group">
+    <input name="licencia" type="number" id="licencia" maxlength="3" minlength="1" class="form__input" placeholder="Licencia"/>
+    <label class="form__label" for="licencia">Licencia</label>
+  </div>
+
+  <div class="form__group">
+    <input name="monto" type="number" id="monto" step=".01" class="form__input" placeholder="Monto" required/>
+    <label class="form__label" for="monto">Monto</label>
+  </div>
+
+  <div class="form__group">
+    <input name="lugar" type="text" id="lugar" class="form__input" placeholder="Lugar" required/>
+    <label class="form__label" for="lugar">Lugar</label>
+  </div>
+
+  <div class="form__group">
+    <input name="motivo" type="text" id="motivo" class="form__input" placeholder="Motivo" required/>
+    <label class="form__label" for="motivo">Motivo</label>
+  </div>
+
+  <div class="form__group">
+    <input name="idOficial" type="number" id="idOficial" class="form__input" placeholder="ID Oficial" required/>
+    <label class="form__label" for="idOficial">ID Oficial</label>
+  </div>
+
+  <input type="submit" name="Submit" value="Registrar" class="sub2 btnAnimation" />
+
+</form>
+</div>

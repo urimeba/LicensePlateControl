@@ -1,0 +1,72 @@
+<div class="form">
+  <header class="head">
+    <h1>Alta de conductores</h1>
+  </header>
+
+  <form id="form1" name="form1" method="post" action="#" enctype="multipart/form-data">
+
+    <div class="form__group">
+      <input name="CURP" type="text" id="CURP" value="" maxlength="18" minlength="18" class="form__input" placeholder="CURP" required/>
+      <label class="form__label" for="CURP">CURP</label>
+    </div>
+
+    <div class="form__group">
+      <input name="nombre" type="text" id="nombre" class="form__input" placeholder="Nombre" required/>
+      <label class="form__label" for="nombre">Nombre</label>
+    </div>
+    
+    <div class="form__group">
+      <input name="domicilio" type="text" id="domicilio" class="form__input" placeholder="Domicilio" required/>
+      <label class="form__label" for="domicilio">Domicilio</label>
+    </div>
+
+    <div class="form__group">
+      <input type="file" name="archivo" id="archivo" accept="image/png" class="upload" required/>
+      <label for="archivo" class="upload__label btnAnimation">Firma</label>
+    </div>
+    
+    <div class="form__group">
+      <select name="grupo" id="grupo" class="form__input">
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+      </select>
+      <label class="form__label" for="grupo">Grupo Sanguineo</label>
+    </div>
+
+    <div class="form__group">
+      <select name="restricciones" id="restricciones" class="form__input">
+        <option value="NINGUNA">Ninguna</option>
+        <option value="USA LENTES">Usa lentes</option>
+        <option value="PROTESIS AUDITIVA">Protesis auditiva</option>        
+        <option value="PROTESIS LOCOMOTORA">Protesis locomotora</option>        
+      </select>
+      <label class="form__label" for="restricciones">Restricciones</label>
+    </div>
+    
+    <div class="form__group">
+      <input name="tel" type="number" id="tel" class="form__input" placeholder="Teléfono de Emergencia" min="0"/>
+      <label class="form__label" for="tel">Teléfono de Emergencia</label>
+    </div>
+    
+    <div class="form__group">
+      <input name="fecha" type="date" id="fecha" class="form__input"/>
+      <label class="form__label" for="fecha">Fecha de Nacimiento</label>
+    </div>
+
+    <div class="form__group">
+      <select name="donante" id="donante" class="form__input">
+        <option value="1">Si</option>
+        <option value="0">No</option>        
+      </select>
+      <label class="form__label" for="donante">Donador</label>
+    </div>
+    
+    <input type="submit" name="Submit" value="Registrar" class="sub2 btnAnimation"/>
+  </form>
+</div>

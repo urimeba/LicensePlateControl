@@ -1,0 +1,50 @@
+<div class="form">
+
+  <header class="head">
+    <h1>Expedición de licencias</h1>
+  </header>
+
+  <form id="form1" name="form1" method="post" action="#" enctype="multipart/form-data">
+    
+    <div class="form__group">
+      <input name="conductor" type="text" id="conductor" maxlength="18" minlength="18" class="form__input" placeholder="Conductor" required/>
+      <label class="form__label" for="conductor">Conductor</label>
+    </div>
+    
+    <div class="form__group">
+      <select name="tipo" id="tipo" class="form__input">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+      </select>
+      <label class="form__label" for="tipo">Tipo</label>
+    </div>
+
+    <div class="form__group">
+      <select name="fVencimiento" id="fVencimiento" class="form__input">
+        <option value="3">3 Años</option>
+        <option value="5">5 Años</option>
+      </select>
+      <label class="form__label" for="fVencimiento">Tipo</label>
+    </div>
+    
+    <div class="form__group">
+      <input name="lugar" type="text" id="lugar" class="form__input" placeholder="Lugar" required/>
+      <label class="form__label" for="lugar">Lugar</label>
+    </div>
+    
+    <div class="form__group">
+      <input name="expide" type="text" id="expide" class="form__input" placeholder="Expide" required/>
+      <label class="form__label" for="expide">Expide</label>
+    </div>
+    
+    <div class="form__group">
+      <input name="Foto" type="file" id="Foto" accept="image/png" class="upload" required/>
+      <label class="upload__label btnAnimation" for="Foto">Foto</label>
+    </div>
+    
+    <input type="submit" name="Submit" value="Registrar" class="sub2 btnAnimation"/>
+  </form>
+</div>

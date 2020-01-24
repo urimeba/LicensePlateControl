@@ -1,0 +1,311 @@
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.test {
+    background-color: red;
+}
+
+.btnAnimation, .btnAnimation:link, .btnAnimation:visited{
+    -moz-transition: all .1s;
+    -webkit-transition: all .1s;
+    transition: all .1s;
+    cursor: pointer;
+}
+
+.btnAnimation:hover{
+    -moz-transform: translateX(-3px);
+    -webkit-transform: translateX(-3px);
+    transform: translateY(-3px);
+    box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btnAnimation:hover::after {
+    -moz-transform: scaleX(1.4) scaleY(1.6);
+    -webkit-transform: scaleX(1.4) scaleY(1.6);
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btnAnimation:active{
+    -moz-transform: translateX(-1px);
+    -webkit-transform: translateX(-1px);
+    transform: translateY(-1px);
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.flexCC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar {
+    height: 100%;
+    width: 20%;
+    font-size: 1.6rem;
+    background-color: #1d2b69;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+.navBar__cat{
+    color: white;
+    cursor: pointer;
+    padding: .8rem 1.5rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+.active, .navBar__cat:hover{
+    background-color: #097AFF;
+}
+
+.navBar__logo h1{
+    font-size: 2.5rem;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.navBar__o{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #fff;
+}
+
+.navBar__opc{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #707070;
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+}
+
+.navBar__opc:hover{
+    background-color: #E6E6E6;
+}
+
+.navBar__logout{
+    position: absolute;
+    width: 100%;
+    bottom: 1rem;
+}
+
+.navBar__logout a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: white;
+}
+
+.navBar__logout a:hover{
+    background-color: #097AFF;
+}
+
+.form {
+    height: 100%;
+    width: 80%;
+    background-color: #fff;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form1{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.back{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right bottom, rgba(9, 122, 255, .8), rgba(105, 193, 255, .8)), url(../img/body.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.loginForm {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm__box {
+    height: 70%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm__title{
+    margin-bottom: 1.2rem;
+}
+
+.form__group:not(:last-child) {
+    margin-bottom: 1.2rem;
+}
+
+.form__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rbga(#fff, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    display: block;
+    transition: all .3s;
+    background-color: whitesmoke;
+    box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+
+.form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #fad0c4;
+}
+
+.form__input:focus:invalid {
+    border-bottom: 3px solid #ff7730;
+}
+
+.form__input::-webkit-input-placeholder {
+    color: #999;
+}
+
+.form__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s;
+}
+
+.form__input:placeholder-shown+.form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+}
+
+.upload{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.upload__label{
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #097AFF;
+    color: white;
+    font-weight: bold;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+.sub{
+    border: none;
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background-color: #1d2b69;
+    color: white;
+    font-weight: bold;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+.sub2{
+    border: none;
+    display: block;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background-color: #097AFF;
+    color: white;
+    font-weight: bold;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+.consulta {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1.4rem;
+    width: 90%;
+}
+.consulta thead th {
+    background-color: #097AFF;
+    border: solid 1px #DDEEEE;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+.consulta tbody tr th {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+    text-align: left;
+}
+
+.head{
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.head h1{
+    font-size: 3rem;
+}

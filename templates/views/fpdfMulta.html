@@ -1,0 +1,16 @@
+<div class="form">
+
+  <header class="head">
+    <h1>Expedición de multas (PDF)</h1>
+  </header>
+
+  <form id="form1" name="form1" method="post" action="functions/lib/pdf/pdfMulta.php" enctype="multipart/form-data">
+    
+    <div class="form__group">
+      <input name="Folio" type="number" id="Folio" maxlength="3" minlength="1" class="form__input" placeholder="ID Multa"/>
+      <label class="form__label" for="Folio">ID Multa</label>
+    </div>
+    
+    <input type="submit" name="Submit" value="Generar" class="sub2 btnAnimation"/>
+  </form>
+</div>

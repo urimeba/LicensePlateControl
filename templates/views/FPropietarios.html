@@ -1,0 +1,31 @@
+<div class="form">
+
+<header class="head">
+  <h1>Alta de propietarios</h1>
+</header>
+
+<form id="form1" name="form1" method="post" action="#">
+  
+  <div class="form__group">
+    <input name="RFC" type="text" id="RFC" minlength=13 maxlength=13 class="form__input" placeholder="RFC" required/>
+    <label class="form__label" for="RFC">RFC</label>
+  </div>
+
+  <div class="form__group">
+    <input name="CURP" type="text" id="CURP" minlength=18 maxlength=18 class="form__input" placeholder="CURP" required/>
+    <label class="form__label" for="CURP">CURP</label>
+  </div>
+  
+  <div class="form__group">
+    <input name="nombre" type="text" id="nombre" class="form__input" placeholder="Nombre" required/>
+    <label class="form__label" for="nombre">Nombre</label>
+  </div>
+
+  <div class="form__group">
+    <input name="direccion" type="text" id="direccion" class="form__input" placeholder="Dirección" required/>
+    <label class="form__label" for="direccion">Dirección</label>
+  </div>
+  
+  <input type="submit" name="Submit" value="Registrar" class="sub2 btnAnimation"/>
+</form>
+</div>

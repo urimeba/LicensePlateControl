@@ -1,0 +1,27 @@
+<div class="back">
+    <div class="loginForm">
+        <div class="loginForm__box">
+            <h1 class="loginForm__title">INICIAR SESIÓN</h1>
+            <form class="loginForm__form" method="post" action="functions/access.php" enctype="multipart/form-data">
+                <div class="form__group">
+                    <input class="form__input" placeholder="Nombre de usuario" name="username" type="text" id="username" required/>
+                    <label for="name" class="form__label">Nombre de usuario</label>
+                </div>
+    
+                <div class="form__group">
+                    <input class="form__input" placeholder="Contraseña" name="psw" type="password" id="psw" required/>
+                    <label for="name" class="form__label">Contraseña</label>
+                </div>
+                
+                <div class="form__group">
+                    <input class="upload" type="file" id="key" name="key" value="key" accept="text/*"/>
+                    <label for="key" class="upload__label btnAnimation">Key</label>
+                </div>
+    
+                <div class="form__group">
+                    <input class="sub btnAnimation" type="submit" name="Submit" value="Entrar"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
